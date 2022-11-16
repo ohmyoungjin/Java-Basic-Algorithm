@@ -17,13 +17,13 @@ public class EnumTest {
         //FRUIT.APPLE COMPANY.APPLE 이 둘은 비교 대상이 되면 안되는데 비교가 가능하고
         //숫자가 똑같다면 같다는 답이 나온다.
         //이건 정상적인 로직이 아니다 이를 해결하기 위해서 enum class가 등장했다.
-        //운영중에 오류나는 설계보단 컴파일 과정에서 오류가 나는 아키텍쳐가 잘 설계된 아키텍쳐이다 !! (중요)
+        //운영중에 오류(Runtime error)나는 설계보단 컴파일 과정(compile error)에서 오류가 나는 아키텍쳐가 잘 설계된 아키텍쳐이다 !! (중요)
         if(FRUIT.APPLE == COMPANY.APPLE) {
             System.out.println("같습니다");
         }
 
         int type = FRUIT.BANANA;
-
+        //switch 조건으로는 몇 가지 제한된 데이터 타입만이 이용가능 하다.
         switch (type) {
             case FRUIT.APPLE :
                 System.out.println("사과 입니다");
