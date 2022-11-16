@@ -22,11 +22,15 @@ public abstract class AbstractClass {
         public int b() {
             return 1;
         }
+
     }
     public static void main(String[] args) {
         //이건 오류 난다 => 추상 클레스를 오버라이드 없이 바로 인스턴스화 시킬려고 했기 때문
         //AbstractClass abstractClass = new AbstractClass();
         AbstractClassSon abstractClassSon = new AbstractClassSon();
+
+        boolean a = abstractClassSon instanceof AbstractClass;
+        System.out.println(a);
 
     }
 
