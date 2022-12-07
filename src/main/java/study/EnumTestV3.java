@@ -17,6 +17,7 @@ enum E_Fruit {
     }
 
     //생성자를 생성과 동시에 상수값을 정의하게 된다.
+    //private 생성자를 가지고 있다.
     E_Fruit(String color) {
         //결과
         //Call Constructor = APPLE
@@ -49,7 +50,6 @@ public class EnumTestV3 {
 //        }
 
         E_Fruit type = E_Fruit.BANANA;
-
         for(E_Fruit f : E_Fruit.values()){
             System.out.println(f+", "+f.getColor());
         }
