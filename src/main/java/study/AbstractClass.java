@@ -18,9 +18,11 @@ public abstract class AbstractClass {
     //추상 클래스를 상속 받은 클래스
     static class AbstractClassSon extends AbstractClass {
         //상속 받은 자식에서는 추상 메서드를 반드시 재정의(override)해줘야 한다.
+
+
         @Override
         public int b() {
-            return 1;
+            return 0;
         }
 
     }
